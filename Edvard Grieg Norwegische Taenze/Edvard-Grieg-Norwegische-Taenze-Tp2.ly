@@ -95,10 +95,13 @@
         \compressMMRests {R2*5 \textMark \markup{\italic "rit."} R2*3 R2^\markup{\italic "a tempo"}} \bar "||" |
         \key a \major
         <<
-          
           \new CueVoice {
-            a'4.^"Ob."( gis8 |
-            a[ b cis a])
+            \transpose f c {
+              \relative a' {
+                a4.^"Ob."( gis8 |
+                a[ b cis a])
+              }
+            }
           }\\
           { 
             R2 | R
@@ -118,8 +121,12 @@
         \repeat volta 2 {
           <<
             \new CueVoice {
-              a4._"Fl. Ob."( gis8 |
-              a[ b cis a])
+              \transpose f c {
+                \relative a' {
+                  a4._"Fl. Ob."( gis8 |
+                  a[ b cis a])
+                }
+              }
             }\\
             { 
               R2^\markup{\italic "a tempo"} | R
@@ -145,7 +152,7 @@
           }\\
           \new CueVoice {
             \stemDown
-            e8\rest_"Corni." e e\rest e |
+            e'8\rest_"Corni." e e\rest e |
             e\rest e e\rest e 
           }
         >>
@@ -261,7 +268,7 @@
        g8-.^\markup{\italic "stacc."}\ff[ g-. g-. g-.]
        g8-. fis-.-> g-. g-. |
        g8-.[ g-.-> g-. g-.] |
-       b-.[ fis-.->]\sf r4\fermata
+       g-.[ fis-.->]\sf r4\fermata
        \bar "||"
        \tempo "Tempo I"
         \new CueVoice {
@@ -300,7 +307,11 @@
         \tempo "Allegro moderato alla Marcia"
         \repeat volta 2 {
           \new CueVoice {
-            b8 d16 e c8 d16 b |
+            \transpose f c {
+              \relative b' {
+                b8 d16 e c8 d16 b |
+              }
+            }
           }
           \compressMMRests{R2*3}
           d,8-.\pp r cis-. r |
@@ -325,19 +336,27 @@
           g-.[ g-. e-. e-.] |
           fis-.[ fis-. g-. g-.] |
           fis-. r d4\sf->^\markup\italic"ten." 
-          \key es \major
+          \key f \major
           \tempo "Tranquillo"
         }
         \mark \markup {\musicglyph #"scripts.ufermata"}
         \new CueVoice {
-          bes'4(^"Viol." d8 es |
-          c4 d8 bes) |
+          \transpose f c {
+            \relative bes' {
+              bes4(^"Viol." d8 es |
+              c4 d8 bes) |
+            }
+          }
         }
         \compressMMRests{R2*14}
         \repeat volta 2 {
           \new CueVoice {
-            d4( d8 es |
-            cis4 d)
+            \transpose f c {
+              \relative bes' {
+                d4( d8 es |
+                cis4 d)
+              }
+            }
           }
           \compressMMRests{R2*6}
           \mark\default
@@ -346,10 +365,14 @@
         \key d \major
         \textMark\markup\italic"a tempo"
         \new CueVoice {
-          b8 d16 e c8 d16 b |
+          \transpose f c {
+            \relative bes' {
+              b8 d16 e c8 d16 b |
+            }
+          }
         }
         \compressMMRests{R2*3}
-        d,8-.\pp r cis-. r |
+        d8-.\pp r cis-. r |
         d-. r d4->^\markup\italic"ten." |
         d8-. r cis-. r |
         d-. r d4->^\markup\italic"ten." |
@@ -383,29 +406,41 @@
         \time 2/4
         \tempo "Allegro molto"
         \new CueVoice {
-          d2~ |
-          d~ |
-          d4( e |
-          f g)
+          \transpose f c {
+            \relative d' {
+              d2~ |
+              d~ |
+              d4( e |
+              f g)
+            }
+          }
         }
         \compressMMRests{R2*20} \bar "||"
         \tempo "Più vivo"
         \key a \major
         \new CueVoice {
-          e'8^"Ob." a e4~ |
-          e2 |
-          a8 e a4~ |
-          a2
+          \transpose f c {
+            \relative e' {
+              e'8^"Ob." a e4~ |
+              e2 |
+              a8 e a4~ |
+              a2
+            }
+          }
         }
         \compressMMRests{R2*4}
-        r4 e,,8-.\ff r8 |
+        r4 e,8-.\ff r8 |
         R2\fermata_"G. P." \bar "||"
         \tempo "Presto e con brio"
         \new CueVoice {
-          <d' a'>2 |
-          <d a'>2 |
-          <d a'>2 |
-          <d a'>2
+          \transpose f c {
+            \relative d' {
+              <d a'>2 |
+              <d a'>2 |
+              <d a'>2 |
+              <d a'>2
+            }
+          }
         }
         \compressMMRests{R2*16}
         \mark\default
@@ -451,8 +486,12 @@
         \mark \markup {\musicglyph #"scripts.ufermata"}
         \key c \major
         \new CueVoice {
-          <d a'>4-. <d a'>4~( |
-          <d a'>4 <d a'>4-.)
+          \transpose f c {
+            \relative a' {
+              <d, a'>4-. <d a'>4~( |
+              <d a'>4 <d a'>4-.)
+            }
+          }
         }
         \compressMMRests{R2*18}
         \new CueVoice {
@@ -466,22 +505,29 @@
         }
         \compressMMRests{R2*12}
         \new CueVoice {
-          \textMark\markup\italic "ritard."
-          d,4 r4 |
-          \acciaccatura{d16 e} d8( cis d4)\fermata
-          
+          \transpose f c {
+            \relative d' {
+              \textMark\markup\italic "ritard."
+              d4 r4 |
+              \acciaccatura{d16 e} d8( cis d4)\fermata
+            }
+          }
         }
         \bar "||"
         \textMark\markup\italic "a tempo"
         \new CueVoice {
-          e'2~(^"Clar." |
-          e8 fis gis a) 
+          \transpose f c {
+            \relative e'' {
+              e2~(^"Clar." |
+              e8 fis gis a) 
+            }
+          }
         }
         \compressMMRests{R2*14}
         \mark\default
         \compressMMRests{R2*4}
         \new CueVoice {
-          c,2(~^"Corno I."|
+          c2(~^"Corno I."|
           c8[ b a g] |
           fis2~ |
           fis4) r |
@@ -520,14 +566,22 @@
         \textMark\markup\italic "più ritard."
         \compressMMRests{R2*5}
         \new CueVoice {
-          \acciaccatura{d'16_"Ob." e} d8( cis d4)\fermata
+          \transpose f c {
+            \relative d'' {
+              \acciaccatura{d16_"Ob." e} d8( cis d4)\fermata
+            }
+          }
         }
         \bar "||"
         \tempo "Presto e con brio"
         \key a \major
         \new CueVoice {
-          <d, a'>2 |
-          <d a'>
+          \transpose f c {
+            \relative a {
+              <d a'>2 |
+              <d a'>
+            }
+          }
         }
         \compressMMRests{R2*18}
         \new CueVoice {
@@ -570,8 +624,12 @@
         \textMark"Coda"
         \tempo "Meno presto"
         \new CueVoice {
-          d'8_"Fl." fis d4 |
-          e8 c a4 |
+          \transpose f c {
+            \relative d'' {
+              d8_"Fl." fis d4 |
+              e8 c a4 |
+            }
+          }
         }
         \compressMMRests{R2*21}
         \textMark\markup\italic "più ritard."
@@ -582,7 +640,7 @@
         }
         R2_"G. P."\fermata \bar "||"
         \tempo "Prestissimo"
-        a,4\ff r |
+        a4\ff r |
         cis r |
         a r |
         cis r |
