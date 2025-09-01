@@ -15,7 +15,10 @@
     instrument = "Trompete 1 in Bb"
     composer = "Edvard Grieg"
     arranger = "Orchestrierung: Hans Sitt"
-    tagline=""
+    tagline=\markup \center-column{
+      "Edited by Felix Rosebrock (mail@felixr.de)"
+      "Source code: https://github.com/froseb/music"
+    }
   }
   
   \score {

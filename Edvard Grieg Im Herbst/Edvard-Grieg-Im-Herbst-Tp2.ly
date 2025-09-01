@@ -15,7 +15,10 @@
     subtitle = "Konzertouvertüre"
     instrument = "Trompete 2 in Bb"
     composer = "Edvard Grieg"
-    tagline=""
+    tagline=\markup \center-column{
+      "Edited by Felix Rosebrock (mail@felixr.de)"
+      "Source code: https://github.com/froseb/music"
+    }
   }
   
   \score {

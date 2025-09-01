@@ -4,7 +4,10 @@
    title = "Slavonic Dance, No. 1"
    composer = "Antonín Dvořák"
    opus = "op. 46"
-   tagline = ""
+   tagline=\markup \center-column{
+     "Edited by Felix Rosebrock (mail@felixr.de)"
+     "Source code: https://github.com/froseb/music"
+   }
    instrument = "Trumpet 1 in Bb"
 }
 
