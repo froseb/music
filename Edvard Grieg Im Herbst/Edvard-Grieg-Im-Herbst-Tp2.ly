@@ -17,7 +17,7 @@
     composer = "Edvard Grieg"
     tagline=\markup \center-column{
       "Edited by Felix Rosebrock (mail@felixr.de)"
-      "Source code: https://github.com/froseb/music"
+      "Source files: https://github.com/froseb/music"
     }
   }
   

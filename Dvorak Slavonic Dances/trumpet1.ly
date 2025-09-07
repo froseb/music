@@ -6,7 +6,7 @@
    opus = "op. 46"
    tagline=\markup \center-column{
      "Edited by Felix Rosebrock (mail@felixr.de)"
-     "Source code: https://github.com/froseb/music"
+     "Source files: https://github.com/froseb/music"
    }
    instrument = "Trumpet 1 in Bb"
 }
